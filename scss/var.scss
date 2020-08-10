@@ -1,0 +1,27 @@
+$black: #3b3b43;
+$darkgrey: #646464;
+$grey: #8c8c8c;
+$orange: #ffa959;
+$lightblue: #80cbce;
+$blue: #317695;
+$red: #fd4a4d;
+$pink: #fa8f99;
+$green: #44d0a3;
+
+$h1size: 18px;
+$h2size: 16px;
+$psize: 12px;
+
+$circle-count: 3; 
+
+$colors-circle-first: (
+    0:$orange,
+    1:$lightblue,
+    2:$blue
+);
+
+$colors-circle-second: (
+    0:$red,
+    1:$pink,
+    2:$green
+);

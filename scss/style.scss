@@ -1,0 +1,57 @@
+@import 'reset';
+@import 'var';
+
+article {
+    width: 578px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: $h1size;
+        color: $black;
+    }
+
+    .icone-option{
+
+        button{
+
+            img{
+                width: 20px;
+            }
+        }
+
+    }
+
+    section{
+
+        h2{
+            font-size: $h2size;
+            color: $darkgrey;
+        }
+
+        .circle-bloc{
+            .circle{
+                width: 112px;
+                height: 112px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -webkit-border-radius: 56px;
+                -moz-border-radius: 56px;
+                border-radius: 56px;
+                border: solid 3px;
+                // border-color: $colors-circle;
+            }           
+
+        }
+
+    }
+
+    @for $i from 0 to $circle-count {
+        .first .circle-bloc:nth-child(#{$i}) .circle {
+        border-color: map-get($colors-circle-first, $i);
+      };
+      .second .circle-bloc:nth-child(#{$i}) .circle {
+        border-color: map-get($colors-circle-second, $i);
+      }
+    }
+}
